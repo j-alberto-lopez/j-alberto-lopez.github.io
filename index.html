@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | Jesús López</title>
+  <meta name="description" content="Desarrollador web junior backend / full stack centrado en código limpio, fundamentos de backend y proyectos reales." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-name">Jesús López</span>
+        <span class="brand-role">Desarrollador web junior backend / full stack</span>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">Sobre mí</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Desarrollador web junior backend / full stack</p>
+          <h1 id="hero-title">Proyectos web limpios y fiables que resuelven problemas reales.</h1>
+          <p class="lead">Centrado en código limpio, fundamentos de backend y proyectos reales.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#projects">Ver proyectos</a>
+            <a class="btn btn-ghost" href="#contact">Contactar</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img class="profile-image" src="docuPortfolio/Perfil.png" alt="Foto de perfil de Jesús López" />
+          <div class="hero-card-inner">
+            <p>Abierto a puestos junior</p>
+            <p>Con base en España · Disponible para remoto y presencial</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">Sobre mí</h2>
+        <p>
+          Tras más de 14 años gestionando mi propio negocio, coordinando dos líneas de actividad y un equipo a mi cargo,
+          he dado el paso definitivo hacia el sector al que siempre quise dedicarme: el desarrollo web.
+        </p>
+        <p>
+          Hoy cuento con la titulación de Técnico Superior en Desarrollo de Aplicaciones Web, formación especializada
+          en tecnologías como Java, Spring Boot y Angular, y el Google IT Automation with Python Professional Certificate.
+          Además, he desarrollado proyectos propios orientados a
+          entornos reales, trabajando con arquitecturas backend, APIs REST, autenticación JWT, bases de datos SQL,
+          JPA/Hibernate, control de versiones con Git y despliegues en servidor.
+        </p>
+        <p>
+          Mi experiencia previa me aporta habilidades que considero especialmente valiosas en desarrollo de software:
+          organización, toma de decisiones, visión de negocio, gestión de equipos, resolución de incidencias y
+          orientación a resultados. Ahora busco formar parte de un equipo donde pueda aportar tanto mi perfil técnico
+          como toda esa experiencia acumulada.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Habilidades técnicas</h2>
+        <div class="skills-grid">
+          <div class="skills-card">
+            <h3>Backend</h3>
+            <ul>
+              <li>Java</li>
+              <li>Python y automatización</li>
+              <li>Spring Boot</li>
+              <li>APIs REST</li>
+            </ul>
+          </div>
+          <div class="skills-card">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="skills-card">
+            <h3>Bases de datos</h3>
+            <ul>
+              <li>MySQL</li>
+            </ul>
+          </div>
+          <div class="skills-card">
+            <h3>Herramientas</h3>
+            <ul>
+              <li>Git, GitHub</li>
+              <li>VS Code, Eclipse</li>
+              <li>Docker (básico), Linux</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Proyectos</h2>
+        <p class="section-intro">
+          Selección de trabajos propios con foco en backend, consumo de APIs y estructura mantenible.
+        </p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Recetario</h3>
+            <p>Aplicación dividida en API REST y cliente web con login, JWT, gestión de recetas, niveles de dificultad y panel básico de administración de usuarios.</p>
+            <p class="tech">Java 17 · Spring Boot · Thymeleaf · REST · JPA · MySQL · JWT</p>
+            <div class="project-actions">
+              <a class="btn btn-ghost" href="projects/project.html">Ver ficha</a>
+              <a class="btn" href="docuPortfolio/recetario515.zip" download>Descargar código</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>Servetracker</h3>
+            <p>API REST para control de productos, stock y ventas en entorno TPV, con cálculo de consumo, rentabilidad y base para alertas de negocio.</p>
+            <p class="tech">Java 17 · Spring Boot · REST · JPA · Hibernate · MySQL</p>
+            <div class="project-actions">
+              <a class="btn btn-ghost" href="projects/servetracker.html">Ver ficha</a>
+              <a class="btn" href="docuPortfolio/servetracker-api.zip" download>Descargar código</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>Halert</h3>
+            <p>Proyecto en desarrollo basado en un sistema de alertas. La idea se presentará con más detalle cuando avance su implementación y validación técnica.</p>
+            <p class="tech">Spring Boot · Angular · REST · Alertas · En proceso</p>
+            <div class="project-actions">
+              <span class="btn btn-disabled" aria-disabled="true">Ficha próximamente</span>
+              <span class="btn btn-disabled" aria-disabled="true">Demo próximamente</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>TPV con IA y automatización de procesos</h3>
+            <p>Proyecto futuro orientado a explorar cómo la inteligencia artificial puede apoyar la gestión de un TPV, automatizar tareas repetitivas y aportar información útil para la toma de decisiones.</p>
+            <p class="tech">IA · Automatización · TPV · Backend · Proyecto futuro</p>
+            <div class="project-actions">
+              <span class="btn btn-disabled" aria-disabled="true">Ficha próximamente</span>
+              <span class="btn btn-disabled" aria-disabled="true">Planificación futura</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="cv" aria-labelledby="cv-title">
+      <div class="container cv-section">
+        <div>
+          <h2 id="cv-title">CV</h2>
+          <p>Accede a mi CV y documentación profesional en PDF.</p>
+        </div>
+        <div class="doc-actions">
+          <a class="btn" href="cv-jesus-alberto-lopez-vazquez.pdf" download>Descargar CV</a>
+          <a class="btn btn-ghost" href="CV-optimizado/cv-presentacion.html" target="_blank" rel="noopener noreferrer">Ver CV online</a>
+          <a class="btn btn-ghost" href="docuPortfolio/CartaPresentacionV.pdf" download>Carta de presentación</a>
+          <a class="btn btn-ghost" href="docuPortfolio/TituloDAW_publico.pdf" download>Título DAW</a>
+          <a class="btn btn-ghost" href="docuPortfolio/DiplomaIpartekSpring_publico.pdf" download>Diploma Spring</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contacto</h2>
+        <div class="contact-grid">
+          <div>
+            <p>Correo</p>
+            <a href="mailto:j.albertolopezvazquez@gmail.com">j.albertolopezvazquez@gmail.com</a>
+          </div>
+          <div>
+            <p>GitHub</p>
+            <a href="https://github.com/j-alberto-lopez">github.com/j-alberto-lopez</a>
+          </div>
+          <div>
+            <p>LinkedIn</p>
+            <a href="https://www.linkedin.com/in/jesus-alberto-lopez-vazquez/">linkedin.com/in/jesus-alberto-lopez-vazquez</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Menos es más. Este portfolio busca convencer, no impresionar.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

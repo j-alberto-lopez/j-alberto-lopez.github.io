@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servetracker | Jesús López</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-name">Jesús López</span>
+        <span class="brand-role">Desarrollador web junior backend / full stack</span>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Inicio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container detail-layout">
+      <section class="detail-surface">
+        <p class="eyebrow">Proyecto destacado</p>
+        <h1>Servetracker</h1>
+        <p>
+          API REST orientada a hostelería y entornos TPV para centralizar productos, stock y tickets de venta.
+          El proyecto pone el foco en la lógica de negocio: cálculo de ventas semanales, beneficio por producto,
+          consumo de stock y datos útiles para analizar rentabilidad.
+        </p>
+        <div class="detail-meta">
+          <span>Java 17</span>
+          <span>Spring Boot</span>
+          <span>REST</span>
+          <span>JPA / Hibernate</span>
+          <span>MySQL</span>
+        </div>
+        <div class="detail-actions">
+          <a class="btn" href="../docuPortfolio/servetracker-api.zip" download>Descargar código</a>
+          <a class="btn btn-ghost" href="../index.html#projects">Volver a proyectos</a>
+        </div>
+      </section>
+
+      <section class="detail-columns">
+        <article class="detail-surface">
+          <h2>Arquitectura</h2>
+          <ul class="detail-list">
+            <li><strong>API independiente</strong>: backend Spring Boot pensado para ser consumido desde un frontend Angular.</li>
+            <li><strong>Persistencia</strong>: Spring Data JPA con Hibernate y MySQL local para entidades de producto, ticket, pedido, receta, proveedor y stock.</li>
+            <li><strong>Controladores</strong>: estructura por recurso con base REST, incluyendo gestión de productos y preparación para tickets y stock.</li>
+            <li><strong>DTOs</strong>: respuestas orientadas a listado con métricas agregadas y detalle de proveedores con stock disponible.</li>
+          </ul>
+        </article>
+
+        <article class="detail-surface">
+          <h2>Qué implementa</h2>
+          <ul class="detail-list">
+            <li>CRUD de productos mediante <code>/api/v1/productos</code>.</li>
+            <li>Consulta de productos con stock actual disponible.</li>
+            <li>Cálculo de ventas semanales comparadas con la semana anterior.</li>
+            <li>Cálculo de precio de compra medio ponderado y beneficio estimado por producto.</li>
+            <li>Base de entidades y relaciones para tickets, pedidos, proveedores, recetas, consumos y alertas.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="detail-columns">
+        <article class="detail-surface">
+          <h2>Validación realizada</h2>
+          <ul class="detail-list">
+            <li>He revisado el controlador de productos, la lógica de servicio y los tests unitarios existentes del módulo.</li>
+            <li>La configuración actual espera MySQL local en <code>localhost:3306/servetracker</code> con usuario <code>root</code> y contraseña <code>root</code>.</li>
+            <li>La API publica por defecto en el puerto <code>9090</code>.</li>
+            <li>El proyecto está en desarrollo y ya refleja una lógica de negocio enfocada en análisis de rentabilidad, no solo en CRUD básico.</li>
+          </ul>
+        </article>
+
+        <article class="detail-surface">
+          <h2>Notas técnicas</h2>
+          <ul class="detail-list">
+            <li>El backend permite CORS desde <code>http://localhost:4200</code>, coherente con el frontend Angular previsto.</li>
+            <li>La lógica de productos combina repositorios de pedidos y tickets para calcular stock, ventas y beneficio.</li>
+            <li>El README marca como siguientes pasos Spring Security, JWT, control de roles y sistema de alertas más avanzado.</li>
+            <li>El paquete descargable incluye el módulo completo para revisión del diseño de entidades, servicios y persistencia.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="detail-surface">
+        <h2>Puntos del código que destacan</h2>
+        <pre class="code-block"><code>servetracker-api
+src/main/java/com/servetracker/controlador
+src/main/java/com/servetracker/servicio
+src/main/java/com/servetracker/modelo
+src/main/java/com/servetracker/repositorio
+src/main/java/com/servetracker/dtos</code></pre>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

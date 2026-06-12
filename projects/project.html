@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recetario | Jesús López</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-name">Jesús López</span>
+        <span class="brand-role">Desarrollador web junior backend / full stack</span>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Inicio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container detail-layout">
+      <section class="detail-surface">
+        <p class="eyebrow">Proyecto destacado</p>
+        <h1>Recetario</h1>
+        <p>
+          Aplicación web orientada a la gestión de recetas con arquitectura separada entre backend REST y cliente
+          servidor-renderizado. El proyecto resuelve autenticación, administración básica de usuarios y operaciones
+          CRUD sobre recetas y niveles de dificultad.
+        </p>
+        <div class="detail-meta">
+          <span>Java 17</span>
+          <span>Spring Boot</span>
+          <span>Thymeleaf</span>
+          <span>MySQL</span>
+          <span>JWT</span>
+        </div>
+        <div class="detail-actions">
+          <a class="btn" href="../docuPortfolio/recetario515.zip" download>Descargar código</a>
+          <a class="btn btn-ghost" href="../index.html#projects">Volver a proyectos</a>
+        </div>
+      </section>
+
+      <section class="detail-columns">
+        <article class="detail-surface">
+          <h2>Arquitectura</h2>
+          <ul class="detail-list">
+            <li><strong>recetas-api</strong>: API REST con Spring Boot, Spring Data JPA y persistencia en MySQL.</li>
+            <li><strong>recetas-cli</strong>: cliente web con Thymeleaf que consume la API mediante <code>RestTemplate</code>.</li>
+            <li><strong>Autenticación</strong>: login con generación y validación de JWT entre cliente y backend.</li>
+            <li><strong>Modelo</strong>: entidades principales para recetas, dificultades, usuarios y roles.</li>
+          </ul>
+        </article>
+
+        <article class="detail-surface">
+          <h2>Qué implementa</h2>
+          <ul class="detail-list">
+            <li>CRUD de recetas con asociación a dificultad.</li>
+            <li>Gestión básica de dificultades desde interfaz web.</li>
+            <li>Login de usuarios con token y sesión.</li>
+            <li>Panel de administración con listado, alta, borrado y modificación de usuarios.</li>
+            <li>Endpoints REST separados por recurso para recetas, dificultades, usuarios y roles.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="detail-columns">
+        <article class="detail-surface">
+          <h2>Validación realizada</h2>
+          <ul class="detail-list">
+            <li>He revisado la separación cliente/API y el flujo principal de login, recetas, dificultades y menú admin.</li>
+            <li>La API compila y pasa <code>mvnw.cmd test</code> en este entorno.</li>
+            <li>El cliente Thymeleaf compila y pasa <code>mvnw.cmd test</code> en este entorno.</li>
+            <li>La configuración actual espera MySQL local en <code>localhost:3306/recetas</code> con usuario <code>root</code>.</li>
+          </ul>
+        </article>
+
+        <article class="detail-surface">
+          <h2>Notas técnicas</h2>
+          <ul class="detail-list">
+            <li>La API publica por defecto en el puerto <code>9090</code>.</li>
+            <li>El cliente consume la API localmente, por lo que no hay demo pública desplegada todavía.</li>
+            <li>El paquete incluye código fuente de ambos módulos para revisión completa del proyecto.</li>
+            <li>La solución está orientada a prácticas reales de backend Java y consumo de servicios REST desde MVC clásico.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="detail-surface">
+        <h2>Puntos del código que destacan</h2>
+        <pre class="code-block"><code>recetas-api
+src/main/java/com/ipartek/controlador
+src/main/java/com/ipartek/servicios
+src/main/java/com/ipartek/modelo
+
+recetas-cli
+src/main/java/com/ipartek/controlador
+src/main/java/com/ipartek/servicio
+src/main/resources/templates</code></pre>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
