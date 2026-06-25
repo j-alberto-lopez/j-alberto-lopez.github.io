@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gestor documental OCR con IA local | Jesús López</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-name">Jesús López</span>
+        <span class="brand-role">Desarrollador web backend / full stack</span>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Inicio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container detail-layout">
+      <section class="detail-surface">
+        <p class="eyebrow">Prototipo funcional</p>
+        <h1>Gestor documental OCR con IA local</h1>
+        <p>
+          Aplicación de escritorio para Windows orientada a automatizar el procesamiento de documentos técnicos.
+          Permite cargar PDFs e imágenes, extraer texto con OCR, generar metadatos, guardar resultados en SQLite
+          y apoyar la extracción de información mediante IA local con Ollama.
+        </p>
+        <div class="detail-meta">
+          <span>Python</span>
+          <span>Tkinter</span>
+          <span>SQLite</span>
+          <span>PyMuPDF</span>
+          <span>Tesseract OCR</span>
+          <span>Ollama</span>
+          <span>qwen2.5:7b</span>
+        </div>
+        <div class="detail-actions">
+          <a class="btn" href="https://github.com/j-alberto-lopez/prototipo-gestor-documental-ocr-ia" target="_blank" rel="noopener noreferrer">Ver repositorio</a>
+          <a class="btn btn-ghost" href="../index.html#projects">Volver a proyectos</a>
+        </div>
+      </section>
+
+      <section class="detail-columns">
+        <article class="detail-surface">
+          <h2>Enfoque</h2>
+          <ul class="detail-list">
+            <li>Automatización documental para reducir tareas manuales de revisión y clasificación.</li>
+            <li>Procesamiento local de PDFs e imágenes con extracción de texto mediante OCR.</li>
+            <li>Uso de IA local para asistir la extracción de datos sin depender de servicios externos.</li>
+            <li>Persistencia en SQLite para conservar textos, metadatos y resultados procesados.</li>
+          </ul>
+        </article>
+
+        <article class="detail-surface">
+          <h2>Qué implementa</h2>
+          <ul class="detail-list">
+            <li>Interfaz de escritorio con Tkinter para gestionar el flujo de trabajo.</li>
+            <li>Lectura de PDFs con PyMuPDF y tratamiento de imágenes con Pillow.</li>
+            <li>Extracción OCR mediante Tesseract para documentos escaneados o imágenes.</li>
+            <li>Integración con Ollama y el modelo <code>qwen2.5:7b</code> para extracción asistida.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="detail-columns">
+        <article class="detail-surface">
+          <h2>Estado</h2>
+          <ul class="detail-list">
+            <li>Prototipo funcional preparado para portfolio.</li>
+            <li>Proyecto orientado a validar un flujo real de OCR, metadatos e IA local.</li>
+            <li>No hay demo online asociada; el código fuente está disponible en GitHub.</li>
+          </ul>
+        </article>
+
+        <article class="detail-surface">
+          <h2>Tecnologías</h2>
+          <ul class="detail-list">
+            <li>Python, Tkinter y SQLite para aplicación local y persistencia.</li>
+            <li>PyMuPDF, Tesseract OCR y Pillow para procesamiento documental.</li>
+            <li>Ollama con <code>qwen2.5:7b</code> para asistencia con IA ejecutada en local.</li>
+          </ul>
+        </article>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
