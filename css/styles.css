@@ -58,7 +58,8 @@ img {
 }
 
 .container {
-  width: min(100% - 2rem, var(--max-width));
+  width: calc(100% - 2rem);
+  max-width: var(--max-width);
   margin: 0 auto;
 }
 
@@ -100,6 +101,7 @@ img {
 }
 
 .nav a {
+  flex: 0 0 auto;
   font-weight: 600;
   font-size: 0.95rem;
 }
@@ -207,6 +209,50 @@ img {
   gap: var(--space-2);
   margin-top: var(--space-2);
   flex-wrap: wrap;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.certification-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.certification-card-featured {
+  border-color: rgba(15, 61, 62, 0.35);
+  box-shadow: var(--shadow);
+}
+
+.certification-issuer {
+  color: var(--color-muted);
+  font-weight: 600;
+  margin-top: -0.4rem;
+}
+
+.certification-badge {
+  align-items: center;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-2);
+  min-height: 150px;
+  padding: var(--space-2);
+}
+
+.certification-badge img {
+  max-height: 120px;
+  width: auto;
+}
+
+.certification-actions {
+  margin-top: auto;
+  padding-top: var(--space-2);
 }
 
 .btn {
@@ -336,6 +382,32 @@ img {
   }
 
   .nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, max-content));
     width: 100%;
+    gap: var(--space-1) var(--space-2);
+  }
+
+  .hero-content,
+  .hero-card {
+    min-width: 0;
+  }
+
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certification-actions .btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 980px) {
+  .certifications-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
