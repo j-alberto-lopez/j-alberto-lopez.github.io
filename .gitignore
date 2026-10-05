@@ -1,0 +1,13 @@
+# Material auxiliar de integración; no forma parte de la web publicada.
+hosteleria-suite/LEEME.md
+hosteleria-suite/PROMPT_CODEX.txt
+gestor-documental/LEEME.md
+gestor-documental/PROMPT_CODEX.txt
+gestor-documental/TARJETA.html
+gestor-documental/tarjeta-preview.html
+gestor-documental/documentacion-fuente.md
+
+# Paquetes y archivos temporales de entrega.
+*.zip
+*.tmp
+*.temp

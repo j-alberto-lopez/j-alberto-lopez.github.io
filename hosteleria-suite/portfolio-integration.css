@@ -1,0 +1,32 @@
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.portfolio-back {
+  white-space: nowrap;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #fff;
+  padding: 8px 12px;
+  font-size: 11px;
+  font-weight: 650;
+  color: #455363;
+}
+
+.portfolio-back:hover {
+  background: #eef3f9;
+  color: var(--accent);
+}
+
+@media (max-width: 720px) {
+  .header-actions {
+    margin-left: auto;
+  }
+
+  .portfolio-back {
+    padding: 6px 9px;
+    font-size: 10px;
+  }
+}

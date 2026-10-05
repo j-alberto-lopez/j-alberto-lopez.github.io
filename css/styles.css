@@ -199,6 +199,13 @@ img {
   margin-top: 0;
 }
 
+.project-flow {
+  margin: 0.75rem 0;
+  color: var(--color-accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 .project-card .tech {
   color: var(--color-muted);
   font-size: 0.95rem;
